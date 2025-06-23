@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="weather-app">
+    <aside class="weather-app__sidebar">
+      <div class="search-container">
+        <input type="text" placeholder="Search for place" id="search-form" />
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="weather-card weather-card--main">
+        <div class="weather-card__icon">
+          <img src="" alt="" class="weather-card__img">
+          <i class="fas fa-cloud-sun animated-icon" id="weather-card__i"></i>
+        </div>
+        <div class="weather-card__temp">12°C</div>
+        <div class="weather-card__location">Paris</div>
+        <div class="weather-card__date">Monday, May 3</div>
+        <div class="weather-card__condition">Patchy Drizzle Day</div>
+        <div class="weather-card__time">16:30</div>
+      </div>
+    </aside>
+
+    <main class="weather-app__main">
+      <div class="weather-app__title">
+        <div class="controls">
+            
+        </div>
+      </div>
+
+      <div class="weather-forecast">
+        <div class="forecast-card" id="forecast-card__today">
+          <div class="forecast-card__day">Today</div>
+          <i class="fas fa-cloud-moon forecast-card__icon" id="forecast-card__today__i"></i>
+          <div class="forecast-card__temp" id="forecast-card__today-temp">12° / 5°</div>
+        </div>
+        <div class="forecast-card" id="forecast-card__tomorrow">
+          <div class="forecast-card__day">Tue</div>
+          <i class="fas fa-cloud forecast-card__icon" id="forecast-card__tomorrow__i"></i>
+          <div class="forecast-card__temp" id="forecast-card__tomorrow-temp">22° / 5°</div>
+        </div>
+        <div class="forecast-card" id="forecast-card__day-after-tomorrow">
+          <div class="forecast-card__day">Wed</div>
+          <i class="fas fa-cloud-showers-heavy forecast-card__icon" id="forecast-card__day-after-tomorrow__i"></i>
+          <div class="forecast-card__temp" id="forecast-card__day-after-tomorrow-temp">12° / 5°</div>
+        </div>
+      </div>
+
+      <section class="weather-highlights">
+        <h2 class="weather-highlights__title">HIGHLIGHTS</h2>
+
+        <div class="highlight highlight--uv">
+          <div class="highlight__label">UV Index</div>
+          <i class="fas fa-sun highlight__icon warning"></i>
+          <div class="highlight__value" id="highlight__value--uv">4</div>
+        </div>
+        <div class="highlight highlight--wind">
+          <div class="highlight__label">Wind Status</div>
+          <i class="fas fa-wind highlight__icon"></i>
+          <div class="highlight__value" id="highlight__value--wind">7.7 km/h</div>
+        </div>
+        <div class="highlight highlight--sun">
+          <div class="highlight__label">Sunrise &amp; Sunset</div>
+          <i class="fas fa-sun highlight__icon"></i>
+          <div class="highlight__value" id="highlight__value__Sunrise--sun">06:30 AM</div>
+          <div class="highlight__value" id="highlight__value__Sunset--sun">08:43 PM</div>
+        </div>
+        <div class="highlight highlight--humidity">
+          <div class="highlight__label">Humidity</div>
+          <i class="fas fa-water highlight__icon"></i>
+          <div class="highlight__value" id="highlight__value--humidity">12%</div>
+        </div>
+        <div class="highlight highlight--visibility">
+          <div class="highlight__label">Visibility</div>
+          <i class="fas fa-eye highlight__icon"></i>
+          <div class="highlight__value" id="highlight__value--visibility">5.2km</div>
+        </div>
+        <div class="highlight highlight--air">
+          <div class="highlight__label">Air Quality</div>
+          <i class="fas fa-smog highlight__icon"></i>
+          <div class="highlight__value" id="highlight__value--aqi">105</div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
